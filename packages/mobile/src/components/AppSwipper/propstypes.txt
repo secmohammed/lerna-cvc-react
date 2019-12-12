@@ -1,0 +1,48 @@
+
+  static propTypes = {
+    horizontal: PropTypes.bool,
+    children: PropTypes.node.isRequired,
+    containerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
+    style: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.number,
+      PropTypes.array
+    ]),
+    scrollViewStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
+    pagingEnabled: PropTypes.bool,
+    showsHorizontalScrollIndicator: PropTypes.bool,
+    showsVerticalScrollIndicator: PropTypes.bool,
+    bounces: PropTypes.bool,
+    scrollsToTop: PropTypes.bool,
+    removeClippedSubviews: PropTypes.bool,
+    automaticallyAdjustContentInsets: PropTypes.bool,
+    showsPagination: PropTypes.bool,
+    showsButtons: PropTypes.bool,
+    disableNextButton: PropTypes.bool,
+    disablePrevButton: PropTypes.bool,
+    loadMinimal: PropTypes.bool,
+    loadMinimalSize: PropTypes.number,
+    loadMinimalLoader: PropTypes.element,
+    loop: PropTypes.bool,
+    autoplay: PropTypes.bool,
+    autoplayTimeout: PropTypes.number,
+    autoplayDirection: PropTypes.bool,
+    index: PropTypes.number,
+    renderPagination: PropTypes.func,
+    dotStyle: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.number,
+      PropTypes.array
+    ]),
+    activeDotStyle: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.number,
+      PropTypes.array
+    ]),
+    dotColor: PropTypes.string,
+    activeDotColor: PropTypes.string,
+    /**
+     * Called when the index has changed because the user swiped.
+     */
+    onIndexChanged: PropTypes.func
+  };
